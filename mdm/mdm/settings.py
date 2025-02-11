@@ -22,9 +22,9 @@ settings = AppSettings()
 class DBSettings(BaseSettings):
     postgres_user: str = "postgres"
     postgres_pass: str = "postgres"
-    postgres_host: str = "localhost"
+    postgres_host: str = "db"
     postgres_port: int = 5432
-    postgres_db_name: str = "postgres"
+    postgres_db_name: str = "mdm"
     echo_sql: bool = True
 
     def connection_string(self) -> str:
